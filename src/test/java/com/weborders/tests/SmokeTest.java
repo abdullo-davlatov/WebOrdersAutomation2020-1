@@ -21,9 +21,9 @@ public class SmokeTest extends AbstractBaseTest {
         extentTest.pass(component + " verified!");
     }
 
-    @DataProvider
+    @DataProvider(parallel = false)
     public Object[][] smokeTestData() {
-        return new Object[][]{
+        return new Object[][]  {
                 {"View all orders", "List of All Orders"},
                 {"View all products", "List of Products"},
                 {"Order", "Order"}
